@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     private static final int ROWS = 3;
     private static final int COLS = 3;
-    private static String[][] board = new String[ROWS][COLS];
+    private static final String[][] board = new String[ROWS][COLS];
     private static String currentPlayer = "X";
 
     public static void main(String[] args)
@@ -47,7 +47,7 @@ public class Main {
             }
 
 
-            playAgain = safeinput.getYNConfirm(in, "Play again? (Y/N): ");
+            playAgain = safeinput.getYNConfirm(in, "Play again? (Y/N)");
             currentPlayer = "X";
         }
 
